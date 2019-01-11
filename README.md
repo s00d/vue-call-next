@@ -40,7 +40,7 @@ import 'vue-call-next/dist/call.css'
 You can pass an array of cal objects through the props
 
 ```html
-<cal :start="startDate" :helper="false" @set-dates="(start, end) => {startDate = start; endDate = end}" placeholder="change" />
+<vue-call-next :start="startDate" :helper="false" @set-dates="(start, end) => {startDate = start; endDate = end}" placeholder="change" />
 ...
 <script>
 ...
