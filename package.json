@@ -1,6 +1,6 @@
 {
   "name": "vue-call-next",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Calendar wrapper for vue",
   "main": "index.js",
   "browserify": {

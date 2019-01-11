@@ -32,7 +32,7 @@ export default {
 ### CSS
 you will need to explicitly import this css file in your project.
 ```js
-import 'vue-call-next/dist/call.css'
+import 'vue-call-next/call.css'
 ```
 
 ## Basic Usage
