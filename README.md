@@ -4,6 +4,9 @@
 
 Simple calendar with selectable dates
 
+## Example App
+try out this [Code Sandbox](https://codesandbox.io/s/qy7jjvn24)
+
 ## Installation
 ```
 npm install --save vue-call-next
