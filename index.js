@@ -1,4 +1,4 @@
-import Cal from './index.js'
+import Cal from './index.vue'
 
 export default {
     install: function (Vue, options) {
