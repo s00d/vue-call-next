@@ -48,8 +48,6 @@
     import YearBlock from './YearBlock'
     import HelperBlock from './HelperBlock'
 
-    import './call.css'
-
     export default {
         name: "VueCal",
         props: {
