@@ -1,4 +1,4 @@
-# vue-cal-next
+# vue-call-next
 
 ![preview](https://s2.gifyu.com/images/image65236dec4b3e998b.gif)
 
@@ -6,14 +6,14 @@ Simple calendar with selectable dates
 
 ## Installation
 ```
-npm install --save vue-cal-next
+npm install --save vue-call-next
 ```
 
-Installing the plugin will globally add the `vue-cal-next` component to your project.
+Installing the plugin will globally add the `vue-call-next` component to your project.
 
 ```js
 //main.js
-import Cal from 'vue-cal-next'
+import Cal from 'vue-call-next'
 Vue.use(Cal)
 ```
 
@@ -21,7 +21,7 @@ But you can also import the standalone component to add locally or for more comp
 
 ```js
 // foo.vue
-import { Cal } from 'vue-cal-next'
+import { Cal } from 'vue-call-next'
 export default {
   components: {
     Cal,
@@ -32,7 +32,7 @@ export default {
 ### CSS
 you will need to explicitly import this css file in your project.
 ```js
-import 'vue-cal-next/dist/call.css'
+import 'vue-call-next/dist/call.css'
 ```
 
 ## Basic Usage

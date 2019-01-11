@@ -1,6 +1,6 @@
 {
   "name": "vue-call-next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calendar wrapper for vue",
   "main": "index.js",
   "browserify": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s00d/vue-cal-next.git"
+    "url": "git+https://github.com/s00d/vue-call-next.git"
   },
   "keywords": [
     "vue",
@@ -24,7 +24,7 @@
   "author": "s00d <Virus181288@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/s00d/vue-cal-next/issues"
+    "url": "https://github.com/s00d/vue-call-next/issues"
   },
-  "homepage": "https://github.com/s00d/vue-cal-next#readme"
+  "homepage": "https://github.com/s00d/vue-call-next#readme"
 }

@@ -2,7 +2,7 @@ import Cal from './index.js'
 
 export default {
     install: function (Vue, options) {
-        Vue.component('vue-cal-next', Cal);
+        Vue.component('vue-call-next', Cal);
     },
 }
 export { Cal }
