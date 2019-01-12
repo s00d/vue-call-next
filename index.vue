@@ -20,7 +20,8 @@
                     <div class="vue-cal-year">
                         <button type="button" class="vue-cal-year-previous" @click="monthYearClick(-1)">◀</button>
                         <span class="vue-cal-year-text">
-                            <span class="vue-cal-show-month" @click.prevent="setStep('month')">{{ monthName[month-1] }}</span> <span class="vue-cal-show-year" @click.prevent="setStep('year')">{{ year }}</span>
+                            <span class="vue-cal-show-month" @click.prevent="setStep('month')">{{ monthName[month-1] }}</span> 
+                            <span class="vue-cal-show-year" @click.prevent="setStep('year')">{{ year }}</span>
                         </span>
                         <button type="button" class="vue-cal-year-next" @click="monthYearClick(1)">▶</button>
                     </div>

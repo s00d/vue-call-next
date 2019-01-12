@@ -206,3 +206,8 @@
     background-color: #549df3;
     color: white;
 }
+
+.vue-cal-show-year {
+    padding-left: 8px;
+    font-weight: bold
+}
