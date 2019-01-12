@@ -1,15 +1,15 @@
 <template>
     <div>
-        <div class="vue-cal-month">
-            <div class="vue-cal-week">
-                <div class="vue-cal-day-name" v-for="day in days" v-text="day.substring(0, 2)">1</div>
+        <div class="vue-call-month">
+            <div class="vue-call-week">
+                <div class="vue-call-day-name" v-for="day in days" v-text="day.substring(0, 2)">1</div>
             </div>
-            <div class="vue-cal-week" v-for="dates in cal">
+            <div class="vue-call-week" v-for="dates in cal">
                 <div :class="{
-                    'vue-cal-day-hide': day.hide,
-                    'vue-cal-day-select': day.day === preventSelect && !day.hide,
-                    'vue-cal-day': !day.hide,
-                    'vue-cal-day-preview':checkSelect(hover, day)
+                    'vue-call-day-hide': day.hide,
+                    'vue-call-day-select': day.day === preventSelect && !day.hide,
+                    'vue-call-day': !day.hide,
+                    'vue-call-day-preview':checkSelect(hover, day)
                 }"
                      v-for="day in dates"
 

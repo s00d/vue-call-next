@@ -1,12 +1,12 @@
 <template>
-    <div class="vue-cal-helper">
-        <div class="vue-cal-helper-item" @click="change(0, 0)">Today</div>
-        <div class="vue-cal-helper-item" @click="change(1, 1)">Yesterday</div>
-        <div class="vue-cal-helper-item" @click="change(7, 0)">Last 7 days</div>
-        <div class="vue-cal-helper-item" @click="change(30, 0)">Last 30 days</div>
-        <div class="vue-cal-helper-item" @click="changeMonth()">This month</div>
-        <div class="vue-cal-helper-item" @click="changePreviousMonth()">Previous month</div>
-        <div class="vue-cal-helper-item" @click="changeYear()">Year</div>
+    <div class="vue-call-helper">
+        <div class="vue-call-helper-item" @click="change(0, 0)">Today</div>
+        <div class="vue-call-helper-item" @click="change(1, 1)">Yesterday</div>
+        <div class="vue-call-helper-item" @click="change(7, 0)">Last 7 days</div>
+        <div class="vue-call-helper-item" @click="change(30, 0)">Last 30 days</div>
+        <div class="vue-call-helper-item" @click="changeMonth()">This month</div>
+        <div class="vue-call-helper-item" @click="changePreviousMonth()">Previous month</div>
+        <div class="vue-call-helper-item" @click="changeYear()">Year</div>
     </div>
 </template>
 <script>

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="vue-cal-years-list">
-            <div class="vue-cal-years-list-item" :class="{'vue-cal-years-list-item-selected': year===select}" v-for="year in years" v-text="year" @click="selectYear(year)"></div>
+        <div class="vue-call-years-list">
+            <div class="vue-call-years-list-item" :class="{'vue-call-years-list-item-selected': year===select}" v-for="year in years" v-text="year" @click="selectYear(year)"></div>
         </div>
     </div>
 </template>

@@ -1,9 +1,9 @@
-.vue-cal-input-group {
+.vue-call-input-group {
     position: relative;
     display: table;
     border-collapse: separate;
 }
-.vue-cal-input {
+.vue-call-input {
     position: relative;
     z-index: 2;
     float: left;
@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.vue-cal-input-group-addon {
+.vue-call-input-group-addon {
     border-radius: 0;
     padding: 7px 6px;
     font-size: 10px;
@@ -41,7 +41,7 @@
 
 
 
-.vue-cal-wrap {
+.vue-call-wrap {
     display: block;
     position: absolute;
     z-index: 100;
@@ -51,11 +51,11 @@
     border: 1px solid #e9e9e9;
 }
 
-.vue-cal-box, .vue-cal-week {
+.vue-call-box, .vue-call-week {
     display: flex;
 }
 
-.vue-cal-day-name, .vue-cal-day, .vue-cal-day-hide {
+.vue-call-day-name, .vue-call-day, .vue-call-day-hide {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
@@ -73,7 +73,7 @@
 
 /*}*/
 
-.vue-cal-day-name {
+.vue-call-day-name {
     color: white;
     padding: 5px;
     background-color: #2196f3;
@@ -81,7 +81,7 @@
     cursor: pointer;
 }
 
-.vue-cal-day {
+.vue-call-day {
     color: black;
     background-color: white;
     border: 1px solid #e8e9e9;
@@ -90,7 +90,7 @@
     /*margin: 1px 0 0 1px;*/
 }
 
-.vue-cal-day-hide {
+.vue-call-day-hide {
     color: black;
     background-color: #e6e5e5;
     border: 1px solid #e8e9e9;
@@ -98,27 +98,27 @@
     cursor: default;
 }
 
-.vue-cal-day:hover {
+.vue-call-day:hover {
     color: white;
     background-color: #2196f3;
     border: 1px solid #2196f3;
 }
 
-.vue-cal-day-select {
+.vue-call-day-select {
     color: white;
     background-color: #2196f3;
     border: 1px solid #2196f3;
 }
-.vue-cal-day-preview {
+.vue-call-day-preview {
     background-color: #38a7ff;
     color: white;
 }
 
 
-.vue-cal-year {
+.vue-call-year {
     display: flex;
 }
-.vue-cal-year-previous, .vue-cal-year-next, .vue-cal-year-text {
+.vue-call-year-previous, .vue-call-year-next, .vue-call-year-text {
     flex-shrink: 1;
     flex-basis: 0;
 
@@ -131,7 +131,7 @@
     cursor: pointer;
 }
 
-.vue-cal-year-previous, .vue-cal-year-next {
+.vue-call-year-previous, .vue-call-year-next {
     flex-grow: 1;
 
     color: black;
@@ -140,19 +140,19 @@
 
     cursor: pointer;
 }
-.vue-cal-year-text {
+.vue-call-year-text {
     flex-grow: 5;
     border: 1px solid #2196f3;
 }
 
 
-.vue-cal-years-list {
+.vue-call-years-list {
     height: 200px;
     overflow-x: scroll;
     border: 1px solid #e8e9e9;
     width: 250px;
 }
-.vue-cal-years-list-item {
+.vue-call-years-list-item {
     background-color: white;
     border: 1px solid #2196f3;
 
@@ -166,12 +166,12 @@
     font-weight: bold;
 }
 
-.vue-cal-years-list-item:hover {
+.vue-call-years-list-item:hover {
     background-color: #2196f3;
     color: white;
 }
 
-.vue-cal-years-list-item-selected {
+.vue-call-years-list-item-selected {
     background-color: #549df3;
     color: white;
 }
@@ -186,10 +186,10 @@
 }
 
 
-.vue-cal-helper {
+.vue-call-helper {
     width: 200px;
 }
-.vue-cal-helper-item {
+.vue-call-helper-item {
     width: 100%;
     background-color: white;
     border: 1px solid #2196f3;
@@ -202,12 +202,12 @@
     cursor: pointer;
 }
 
-.vue-cal-helper-item:hover {
+.vue-call-helper-item:hover {
     background-color: #549df3;
     color: white;
 }
 
-.vue-cal-show-year {
+.vue-call-show-year {
     padding-left: 8px;
     font-weight: bold
 }

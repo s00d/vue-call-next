@@ -1,29 +1,29 @@
 <template>
     <div>
-        <div class="vue-cal-input-group" @click.prevent="show = !show">
+        <div class="vue-call-input-group" @click.prevent="show = !show">
             <input ref="input"
-                   class="vue-cal-input"
+                   class="vue-call-input"
                    type="text"
                    :value="inputText"
                    :placeholder="placeholder"
                    disabled
             >
-            <span class="vue-cal-input-group-addon">
+            <span class="vue-call-input-group-addon">
                 <span v-if="show">▲</span>
                 <span v-else>▼</span>
             </span>
         </div>
 
-        <div class="vue-cal-wrap" v-if="show">
-            <div class="vue-cal-box">
+        <div class="vue-call-wrap" v-if="show">
+            <div class="vue-call-box">
                 <div >
-                    <div class="vue-cal-year">
-                        <button type="button" class="vue-cal-year-previous" @click="monthYearClick(-1)">◀</button>
-                        <span class="vue-cal-year-text">
-                            <span class="vue-cal-show-month" @click.prevent="setStep('month')">{{ monthName[month-1] }}</span> 
-                            <span class="vue-cal-show-year" @click.prevent="setStep('year')">{{ year }}</span>
+                    <div class="vue-call-year">
+                        <button type="button" class="vue-call-year-previous" @click="monthYearClick(-1)">◀</button>
+                        <span class="vue-call-year-text">
+                            <span class="vue-call-show-month" @click.prevent="setStep('month')">{{ monthName[month-1] }}</span> 
+                            <span class="vue-call-show-year" @click.prevent="setStep('year')">{{ year }}</span>
                         </span>
-                        <button type="button" class="vue-cal-year-next" @click="monthYearClick(1)">▶</button>
+                        <button type="button" class="vue-call-year-next" @click="monthYearClick(1)">▶</button>
                     </div>
                     <month-block v-if="step === 'month'" @select-month="selectMonth" :select="parseInt(month)" :month-name="monthName"/>
                     <year-block v-if="step === 'year'" @select-year="selectYear" :select="parseInt(year)" :min="minYear"/>
