@@ -1,5 +1,8 @@
 # vue-call-next
 
+[![Build Status](https://travis-ci.org/s00d/vue-call-next.svg?branch=master)](https://travis-ci.org/s00d/vue-call-next)
+[![npm version](https://badge.fury.io/js/vue-call-next.svg)](https://badge.fury.io/js/vue-call-next)
+
 ![preview](https://s2.gifyu.com/images/image65236dec4b3e998b.gif)
 
 Simple calendar with selectable dates
@@ -16,18 +19,18 @@ Installing the plugin will globally add the `vue-call-next` component to your pr
 
 ```js
 //main.js
-import Cal from 'vue-call-next'
-Vue.use(Cal)
+import Call from 'vue-call-next'
+Vue.use(Call)
 ```
 
 But you can also import the standalone component to add locally or for more complex installations.
 
 ```js
 // foo.vue
-import { Cal } from 'vue-call-next'
+import { Call } from 'vue-call-next'
 export default {
   components: {
-    Cal,
+    Call,
   },
 }
 ```

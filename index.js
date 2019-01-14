@@ -1,8 +1,8 @@
-import Cal from './index.vue'
+import Call from './index.vue'
 
 export default {
     install: function (Vue, options) {
-        Vue.component('vue-call-next', Cal);
+        Vue.component('vue-call-next', Call);
     },
 }
-export { Cal }
+export { Call }
