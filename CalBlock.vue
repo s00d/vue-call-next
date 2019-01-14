@@ -4,18 +4,18 @@
             <div class="vue-call-week">
                 <div class="vue-call-day-name" v-for="day in days" v-text="day.substring(0, 2)">1</div>
             </div>
-            <div class="vue-call-week" v-for="dates in cal">
+            <div class="vue-call-week" v-for="(dates, key) in cal" :key="key">
                 <div :class="{
                     'vue-call-day-hide': day.hide,
                     'vue-call-day-select': day.day === preventSelect && !day.hide,
                     'vue-call-day': !day.hide,
                     'vue-call-day-preview':checkSelect(hover, day)
                 }"
-                     v-for="day in dates"
-
-                     v-text="day.day"
-                     @mouseover="setHover(day)"
-                     @click="selectDay(day)">
+                    v-for="(day, key_day) in dates"
+                    :key="key_day"
+                    v-text="day.day"
+                    @mouseover="setHover(day)"
+                    @click="selectDay(day)">
                 </div>
             </div>
         </div>
@@ -129,16 +129,14 @@
                 if(this.hover === 0) return false;
                 if(hide) return false;
 
-                if(this.year === this.firstDateParse.year && this.month-1 === this.firstDateParse.month) {
-                    return (day > this.firstDateParse.day && day < hover || day < this.firstDateParse.day && day > hover);
-                }
-                if (this.year >= this.firstDateParse.year && this.month-1 >= this.firstDateParse.month) {
-                    return (day < hover);
-                } else {
-                    return (day > hover);
-                }
+                let first_int = '' + this.firstDateParse.year + this.firstDateParse.month
+                let select_int = '' + this.year + (this.month-1)
+                let select_day = '' + this.firstDateParse.day
 
-                return false
+                if(select_int === first_int) {
+                    return (day > select_day && day < hover || day < select_day && day > hover);
+                }
+                return (select_int >= first_int) ? day < hover : day > hover;
             },
             setHover(select) {
                 if(select.hide) {
@@ -154,7 +152,5 @@
     };
 </script>
 <style lang="css">
-
-
 
 </style>
