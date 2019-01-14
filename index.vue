@@ -29,7 +29,7 @@
                     <year-block v-if="step === 'year'" @select-year="selectYear" :select="parseInt(year)" :min="minYear"/>
 
                     <!--<transition name="fade" mode="out-in">-->
-                    <cal-block v-if="step === 'cal-1'" :firstWeekDay="1" @set-day="setDay" v-model="startDate" :days-name="daysName" />
+                    <cal-block v-if="step === 'cal-1'" :firstWeekDay="1" @set-day="setDay" v-model="startDate" :days-name="daysName" :day-conv="dayConv" />
                     <!--</transition>-->
                     <transition name="slide-fade">
                         <cal-block v-if="step === 'cal-2'" :firstWeekDay="1" @set-day="setDay" v-model="startDate" :days-name="daysName" :first-date="firstDate" />
@@ -56,13 +56,19 @@
                 default: null
             },
             daysName: {
-                type: Array,
+                type: [Array, Object],
                 default: function() {
                     return ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
                 }
             },
+            dayConv: {
+                type: Function,
+                default: function(day) {
+                    return day.substring(0, 2);
+                }
+            },
             monthName: {
-                type: Array,
+                type: [Array, Object],
                 default: function() {
                     return ["January","February","March","April","May","June","July","August","September","October","November","December"]
                 }

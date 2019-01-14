@@ -2,7 +2,7 @@
     <div>
         <div class="vue-call-month">
             <div class="vue-call-week">
-                <div class="vue-call-day-name" v-for="day in days" v-text="day.substring(0, 2)">1</div>
+                <div class="vue-call-day-name" v-for="(day, key) in days" v-text="dayConv(day)" :key="key"></div>
             </div>
             <div class="vue-call-week" v-for="(dates, key) in cal" :key="key">
                 <div :class="{
@@ -38,10 +38,13 @@
                 default: false
             },
             daysName: {
-                type: Array,
+                type: [Array, Object],
                 default: function() {
                     return []
                 }
+            },
+            dayConv: {
+                type: Function,
             },
         },
         computed: {

@@ -1,7 +1,12 @@
 <template>
     <div>
         <div class="vue-call-years-list">
-            <div class="vue-call-years-list-item" :class="{'vue-call-years-list-item-selected': month===select}" v-for="month in months" v-text="monthName[month-1]" @click="selectMonth(month)"></div>
+            <div v-for="(month, key) in months" :key="key" 
+                class="vue-call-years-list-item" 
+                :class="{'vue-call-years-list-item-selected': month===select}" 
+                v-text="monthName[month-1]" 
+                @click="selectMonth(month)">
+            </div>
         </div>
     </div>
 </template>
@@ -14,7 +19,7 @@
                 default: 1
             },
             monthName: {
-                type: Array,
+                type: [Array, Object],
                 default: function() {
                     return []
                 }
