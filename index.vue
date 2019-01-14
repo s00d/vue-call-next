@@ -29,7 +29,7 @@
                     <year-block v-if="step === 'year'" @select-year="selectYear" :select="parseInt(year)" :min="minYear"/>
 
                     <!--<transition name="fade" mode="out-in">-->
-                    <cal-block v-if="step === 'cal-1'" :firstWeekDay="1" @set-day="setDay" v-model="startDate" :days-name="daysName" :day-conv="dayConv" />
+                    <cal-block v-if="step === 'cal-1'" :firstWeekDay="1" @set-day="setDay" v-model="startDate" :days-name="daysName" />
                     <!--</transition>-->
                     <transition name="slide-fade">
                         <cal-block v-if="step === 'cal-2'" :firstWeekDay="1" @set-day="setDay" v-model="startDate" :days-name="daysName" :first-date="firstDate" />
