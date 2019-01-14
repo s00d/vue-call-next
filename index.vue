@@ -116,8 +116,17 @@
         },
         watch: {
             start(val) {
-                if(this.isDate(val)) {
+                if(val && this.isDate(val)) {
                     this.startDate = val
+                } else {
+                    let date = new Date();
+                    var mm = date.getMonth() + 1; // getMonth() is zero-based
+                    var dd = date.getDate();
+                    this.startDate = [date.getFullYear(), (mm>9 ? '' : '0') + mm, (dd>9 ? '' : '0') + dd].join('-')
+
+                    this.firstDate = null
+                    this.lastDate = null
+                    this.inputText = this.placeholder
                 }
             }
         },
