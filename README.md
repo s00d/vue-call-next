@@ -67,4 +67,3 @@ month-name | ```[ "January", "February", "March", "April", "May", "June", "July"
 min-year | 2000 | Minimal year to change
 range | true | enable or disable range change
 placeholder | click | text to input placeholder
-day-conv | (day) => day.substring(0, 2) | function for convert days name

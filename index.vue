@@ -61,12 +61,6 @@
                     return ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
                 }
             },
-            dayConv: {
-                type: Function,
-                default: function(day) {
-                    return day.substring(0, 2);
-                }
-            },
             monthName: {
                 type: [Array, Object],
                 default: function() {

@@ -42,10 +42,7 @@
                 default: function() {
                     return []
                 }
-            },
-            dayConv: {
-                type: Function,
-            },
+            }
         },
         computed: {
             days() {
@@ -147,9 +144,13 @@
                 } else {
                     this.hover = select.day
                 }
+            },
+            dayConv(day) {
+                    return day.replace('о', '').substring(0, 2)
             }
         },
         mounted() {
+
         },
         components: {}
     };
