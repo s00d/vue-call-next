@@ -29,7 +29,6 @@ describe('VueFullCalendar', () => {
         })
 
         it('export standalone component', () => {
-          // console.log(Vue.options.components);
             expect(typeof Vue.options.components['call']).toEqual('function')
             expect(Vue.options.components['call']).toEqual(Vue.options.components['vue-call-next'])
         })

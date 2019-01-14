@@ -62,8 +62,8 @@ You can pass an array of cal objects through the props
 Param | Default | Description
 ------ | ------ | ------
 start | NOW() | date started, format: YYYY-MM-DD
-daysName | ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'] | array with day name
-monthName | ["January","February","March","April","May","June","July","August","September","October","November","December"] | array with month name
+daysName | ```[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ]``` | array with day name
+monthName | ```[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]``` | array with month name
 minYear | 2000 | Minimal year to change
 range | true | enable or disable range change
 placeholder | click | text to input placeholder
