@@ -1,6 +1,6 @@
 {
   "name": "vue-call-next",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Calendar wrapper for vue",
   "main": "index.js",
   "browserify": {
@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "test": "jest -i",
+    "test": "jest -i -u",
     "jest-clear": "jest --clearCache"
   },
   "repository": {

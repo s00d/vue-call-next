@@ -11,10 +11,11 @@ const wrapper = mount(Call, {
   }
 });
 
-test('renders correctly', () => {
-  expect(wrapper.element).toMatchSnapshot()
+describe('VueCallNext', () => {
+    describe('installing plugin', () => {
+        it('load component', () => {
+          expect(wrapper.element).toMatchSnapshot()
+          expect(wrapper.find('.vue-call-input-group').exists()).toBeTruthy()
+        });
+    })
 })
-
-test('VueCallNext', () => {
-  expect(wrapper.find('.vue-call-input-group').exists()).toBeTruthy()
-});
