@@ -9,14 +9,15 @@ module.exports = {
   ],
   moduleFileExtensions: [
     "js",
+    "json",
     "vue"
   ],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1"
   },
   transform: {
-    "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
-    "^.+\\.vue$": "<rootDir>/node_modules/vue-jest"
+    ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest",
   },
   transformIgnorePatterns: [
     "<rootDir>/node_modules/.*"
