@@ -1,4 +1,4 @@
-import Call from './index.vue'
+import Call from './src/index.vue'
 
 export default {
     install: function (Vue, options) {

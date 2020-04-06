@@ -1,8 +1,8 @@
 import Vue from 'vue/dist/vue'
-import VueFullCalendar from '../index'
+import VueCallNext from '../index'
 import { Call } from '../index'
 
-Vue.use(VueFullCalendar)
+Vue.use(VueCallNext)
 Vue.component('call', Call)
 
 const events = jest.fn()
@@ -22,7 +22,7 @@ const vm = new Vue({
     }
 }).$mount();
 
-describe('VueFullCalendar', () => {
+describe('VueCallNext', () => {
     describe('installing plugin', () => {
         it('load component', () => {
             expect(typeof Vue.options.components['vue-call-next']).toEqual('function')
